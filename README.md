@@ -20,7 +20,7 @@ The one problem with that is I don't know Rust, and haven't worked with c/c++ or
 
 ## highlights
 
-Continue came in handy especially for a few specific functions:
+Continue chat came in handy especially for a few specific functions:
 - [transcribe_wav_file](https://github.com/djgould/platy/blob/main/src-tauri/src/recorder.rs#L309-L401)
 - [combine_segments](https://github.com/djgould/platy/blob/main/src-tauri/src/recorder.rs#L100-L162)
 - [get_complete_transcription](https://github.com/djgould/platy/blob/main/src-tauri/src/lib.rs#L275-L325)
