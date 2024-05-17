@@ -8,7 +8,7 @@ Platy is current in it's early stages, built on Tauri, a cross platform app fram
 
 Given Platy has only been around for a couple days, the current version is just a simple stateless recording tool, with live transcription powered by [whisper.cpp](https://github.com/ggerganov/whisper.cpp)
 
-[insert gif]
+![2024-05-16 21 27 59](https://github.com/djgould/continue-experience/assets/6018174/d6160fcd-2832-4b2a-b648-928b524ef2cd)
 
 ## the setup
 
@@ -20,15 +20,21 @@ The one problem with that is I don't know Rust, and haven't worked with c/c++ or
 
 ## highlights
 
+Continue came in handy especially for a few specific functions:
+- [transcribe_wav_file](https://github.com/djgould/platy/blob/main/src-tauri/src/recorder.rs#L309-L401)
+- [combine_segments](https://github.com/djgould/platy/blob/main/src-tauri/src/recorder.rs#L100-L162)
+- [get_complete_transcription](https://github.com/djgould/platy/blob/main/src-tauri/src/lib.rs#L275-L325)
+- [get_realtime_transcription](https://github.com/djgould/platy/blob/main/src-tauri/src/lib.rs#L224-L272)
+
 Contiues chat tool was by far the most useful part for me. While learning a new language it is extremely helpful to grab code snippets I don't undertand. Rust introduces programming paradigms that are very different from other languages, and it is difficult to make any progress without understanding them. Being able to go from `cannot move out of borrowed content` and being able to CMD + L and ask "Can you explain borrowing in rust?" with a few follow up questions closes the learning loop significantly.
 
 The code completion with starcoder:7b while developing the frontend was also incredibly seemless. Continue did a great job suggesting useful code snippets and I found myself quickly tabbing my way through a functional UI. Perhaps more importantly I found it did a good job _not_ suggesting snippets when they werent needed, which is one of the more annoying aspects of many coding copilot tools.
 
 ## lowlights
 
-AI is really bad at rust. I am too but I was genuinly surprised by how often it suggested code that was completely broken for even small simple code snippets. Rust has very strict typing and while the code logic seemed appropriate, the suggested snippets broke all of rusts rules around ownership, borrowing and mutability.
+AI is really bad at rust. I am too but I was genuinly surprised by how often it suggested code that was completely broken for even small simple code snippets. Rust has very strict typing and while the code logic seemed appropriate, the suggested snippets broke all of rusts rules around ownership, borrowing and mutability, and required major revision. Better than nothing I suppose but still annoying.
 
-This also meant the code snippets were pretty useless most of the time. This is annoying and I found myself disabling Continue autocomplete when editing Rust files and enabling again when editing typescript files. If it doesn't already exist it would be nice to configure Continue to only autocomplete in specified language types.
+This also meant the tabcomplete code snippets were pretty useless most of the time. This is annoying and I found myself disabling Continue tabcomplete when editing Rust files and enabling again when editing typescript files. If it doesn't already exist it would be nice to configure Continue to only autocomplete in specified language types.
 
 I don't think this is only a problem with copilot, even going to ChatGPT and asking it for help for Rust related things gave me pretty poor results. It's great at explaining high level rust concepts, but bad at implementing them.
 
