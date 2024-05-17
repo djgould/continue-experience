@@ -21,10 +21,10 @@ The one problem with that is I don't know Rust, and haven't worked with c/c++ or
 ## highlights
 
 Continue chat came in handy especially for a few specific functions:
-- [transcribe_wav_file](https://github.com/djgould/platy/blob/main/src-tauri/src/recorder.rs#L309-L401)
-- [combine_segments](https://github.com/djgould/platy/blob/main/src-tauri/src/recorder.rs#L100-L162)
-- [get_complete_transcription](https://github.com/djgould/platy/blob/main/src-tauri/src/lib.rs#L275-L325)
-- [get_realtime_transcription](https://github.com/djgould/platy/blob/main/src-tauri/src/lib.rs#L224-L272)
+- [transcribe_wav_file](https://github.com/djgould/platy/tree/d493a7fcf957961ce979ffb02175d85585680868/src-tauri/src/recorder.rs#L309-L401)
+- [combine_segments](https://github.com/djgould/platy/tree/d493a7fcf957961ce979ffb02175d85585680868/src-tauri/src/recorder.rs#L100-L162)
+- [get_complete_transcription](https://github.com/djgould/platy/tree/d493a7fcf957961ce979ffb02175d85585680868/src-tauri/src/lib.rs#L275-L325)
+- [get_realtime_transcription](https://github.com/djgould/platy/tree/d493a7fcf957961ce979ffb02175d85585680868/src-tauri/src/lib.rs#L224-L272)
 
 Contiues chat tool was by far the most useful part for me. While learning a new language it is extremely helpful to grab code snippets I don't undertand. Rust introduces programming paradigms that are very different from other languages, and it is difficult to make any progress without understanding them. Being able to go from `cannot move out of borrowed content` and being able to CMD + L and ask "Can you explain borrowing in rust?" with a few follow up questions closes the learning loop significantly.
 
